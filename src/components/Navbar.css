@@ -4,7 +4,7 @@
   background-color: #d5d9da;
   align-items: center;
   width: Auto;
-  Height: 130px;
+  Height: auto;
   
 }
 
@@ -66,5 +66,16 @@
 .nav-socials a:hover {
   color: #00ffcc;
   transform: scale(1.1);
+}
+
+/* NavBar.css */
+.navbar {
+  transform: translateY(-50px);
+}
+
+/* Prevent overlap with content below */
+main, .page-content, .hero + * {
+  /* whichever wraps your page content */
+  padding-top: 80px;
 }
 
