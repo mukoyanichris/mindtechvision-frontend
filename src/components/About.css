@@ -1,0 +1,55 @@
+.about-section {
+    background-color: #f3f4f6;
+    padding: 3rem 1rem;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-description {
+    color: #4b5563;
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: right;
+    width: 200px;
+  }
+  
+  .member-image {
+    width: 128px;
+    height: 128px;
+    border-radius: 9999px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+  }
+  
+  .member-name {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .member-role {
+    color: #6b7280;
+  }
+  
