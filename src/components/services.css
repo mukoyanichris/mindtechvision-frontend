@@ -1,12 +1,12 @@
 .services {
-  padding: 60px 30px;
+  padding: 40px 20px;
   background-color: #f9f9f9;
   text-align: center;
 }
 
 .services-header {
-  background-color: #d5d9da;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 30px;
   margin-bottom: 40px;
   border-radius: 50px;

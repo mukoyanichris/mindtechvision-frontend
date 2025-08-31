@@ -3,7 +3,7 @@ import './About.css'; // Import the CSS file
 
 const teamMembers = [
   {
-    name: 'Chris Wekesa',
+    name: 'Chris Mukoyani',
     role: 'CEO & Co-founder',
     image: 'https://placehold.co/200x200?text=Chris',
   },
