@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Custom Software Development",
+      "description": "Build tools that work exactly how your business needs them to.",
+      "img": "/Assets/software.jpg",
+      "list": ["Web Applications", "Desktop Tools", "Internal Systems"]
+    },
+    {
+      "title": "Networking Solutions",
+      "description": "Setup and configuration of routers, switches, and Wi-Fi for reliable connectivity.",
+      "img": "/Assets/software.jpg"
+    },
+    {
+      "title": "IT Training",
+      "description": "Hands-on training for teams and individuals on cybersecurity, IT basics, and more.",
+      "img": "/Assets/training.jpg"
+    }
+  ]
+  

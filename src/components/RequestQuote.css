@@ -61,3 +61,23 @@
 .submit-btn:hover {
   background-color: #0056b3;
 }
+.form-alert {
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+.form-alert-success { background: #e8f7ee; color: #116b2f; border: 1px solid #b9ebc9; }
+.form-alert-error { background: #fdecea; color: #8a1f17; border: 1px solid #f5c6c3; }
+
+.submit-btn[disabled] { opacity: 0.6; cursor: not-allowed; }
+.success-message {
+  text-align: center;
+  padding: 2rem;
+  background: #e8f7ee;
+  border: 1px solid #b9ebc9;
+  border-radius: 12px;
+  color: #116b2f;
+}
+
+

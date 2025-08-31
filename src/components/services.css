@@ -56,5 +56,13 @@
   padding-left: 20px;
   font-size: 0.9rem;
 }
+.placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  grid-column: 1 / -1;
+  padding: 2rem;
+}
+
 
   
