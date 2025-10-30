@@ -61,3 +61,25 @@
   font-weight: bold;
   color: #444;
 }
+
+
+/* Glide (parallax-like) hover following cursor */
+.glide-wrap {
+  position: relative;
+  perspective: 800px;
+  --gx: 0;
+  --gy: 0;
+}
+.glide-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translate3d(calc(var(--gx) * 8px), calc(var(--gy) * 8px), 0) rotateX(calc(var(--gy) * -6deg)) rotateY(calc(var(--gx) * 6deg));
+  transition: transform 80ms linear, box-shadow .2s ease, filter .2s ease;
+  border-radius: 20px;
+  will-change: transform;
+}
+.glide-wrap:hover .glide-img {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  filter: saturate(1.05);
+}

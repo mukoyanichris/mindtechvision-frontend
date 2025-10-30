@@ -1,18 +1,56 @@
+/* --- Footer Styles --- */
 .footer {
-    background-color: #fbfdfd;
-    color: #000000;
-    padding: auto;
-    text-align: center;
-    margin-top: auto;
+  background-color: #fbfdfd;
+  color: #000000;
+  padding: 1.5rem;         /* replaced auto with real spacing */
+  text-align: center;
+  margin-top: 2rem;        /* auto isn’t valid here */
+}
+
+.footer h3 {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* --- Responsive Additions --- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem;
   }
-  
   .footer h3 {
-    margin-bottom: 0px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
-  
   .footer p {
-    margin: 5px 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
-  
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .footer {
+    padding: 0.75rem;
+  }
+  .footer h3 {
+    font-size: 1.3rem;
+  }
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tiny phones */
+@media (max-width: 360px) {
+  .footer h3 {
+    font-size: 1.2rem;
+  }
+  .footer p {
+    font-size: 0.85rem;
+  }
+}

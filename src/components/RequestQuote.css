@@ -16,6 +16,125 @@
   max-width: 800px;
   margin-inline: auto;
 }
+/* --- Responsive Additions (append after your current CSS) --- */
+
+/* Prevent tiny layout shifts on different devices */
+.request-quote,
+.request-quote * {
+  box-sizing: border-box;
+}
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .request-quote,
+  .request-quote-header {
+    max-width: 760px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .request-quote {
+    padding: 32px 20px;
+    max-width: 720px;
+  }
+  .request-quote-header {
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 36px;
+    max-width: 720px;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .request-quote {
+    padding: 24px 16px;
+    max-width: 92vw; /* keep comfy side padding on small screens */
+  }
+  .request-quote-header {
+    padding: 18px 16px;
+    border-radius: 24px;
+    max-width: 92vw;
+  }
+
+  .request-quote h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .quote-form .form-group { margin-bottom: 16px; }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    font-size: 15px;        /* slightly smaller for narrower screens */
+    padding: 10px;
+  }
+
+  .submit-btn {
+    width: 100%;            /* easier to tap */
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .request-quote {
+    padding: 16px 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  }
+
+  .request-quote-header {
+    padding: 14px 12px;
+    border-radius: 18px;
+    margin-bottom: 8px;
+  }
+
+  .request-quote h2 {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+
+  .quote-form label {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .quote-form textarea {
+    min-height: 140px;      /* avoid cramped typing on phones */
+  }
+
+  .submit-btn {
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  .form-alert {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+}
+
+/* Tiny phones */
+@media (max-width: 360px) {
+  .request-quote h2 { font-size: 1.15rem; }
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    font-size: 0.9rem;
+  }
+}
+
 
 .request-quote h2 {
   text-align: center;

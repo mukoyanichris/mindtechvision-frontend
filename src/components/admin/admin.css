@@ -1,0 +1,16 @@
+.admin-shell { min-height: calc(100vh - 64px); display: grid; grid-template-columns: 240px 1fr; }
+.admin-sidebar { border-right: 1px solid #eef2f9; background: #fafcff; padding: 14px; }
+.admin-brand { font-weight: 800; margin-bottom: 10px; }
+.admin-nav { display: grid; gap: 8px; }
+.admin-nav a { text-decoration: none; color: #223; padding: 8px 10px; border-radius: 8px; }
+.admin-nav a.active, .admin-nav a:hover { background: #eef4ff; color: #0b62ff; }
+.admin-content { padding: 16px; }
+.admin-card { background: #fff; border: 1px solid #eef2f9; border-radius: 12px; padding: 14px; box-shadow: 0 6px 20px rgba(0,0,0,0.04); margin-bottom: 12px; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { border-bottom: 1px solid #eef2f9; text-align: left; padding: 10px 8px; }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 10px; border: 1px solid #cfe0ff; background: #f2f7ff; color: #0b62ff; cursor: pointer; text-decoration: none; }
+.btn:hover { filter: brightness(0.98); }
+.btn.primary { background: #0b62ff; color: #fff; border-color: transparent; }
+.btn.danger { background: #ffe9e9; color: #cc1e1e; border-color: #ffd0d0; }
+.btn.success { background: #eafff2; color: #0f7a33; border-color: #c6f2d9; }
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }

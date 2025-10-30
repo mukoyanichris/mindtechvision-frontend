@@ -2,7 +2,15 @@ import React, { useState, useEffect } from "react";
 import "./services.css";
 import servicesData from "./data/services.json"; // <-- JSON import
 
-function Services() {
+function Services (){
+  const onGlide = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;  // -0.5..0.5
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    e.currentTarget.style.setProperty('--gx', x.toFixed(3));
+    e.currentTarget.style.setProperty('--gy', y.toFixed(3));
+  };
+ {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
@@ -25,7 +33,7 @@ function Services() {
         ) : (
           services.map((service, index) => (
             <div className="service-card" key={index}>
-              {service.img && <img src={service.img} alt={service.title} />}
+              {service.img && <div className="glide-wrap" onMouseMove={onGlide}><img src={service.img} alt={service.title} /></div>}
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               {service.list && (
@@ -41,6 +49,6 @@ function Services() {
       </div>
     </section>
   );
-}
+}}
 
 export default Services;

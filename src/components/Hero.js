@@ -13,6 +13,14 @@ const images = [
 ];
 
 function Hero() {
+  const onGlide = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;  // -0.5..0.5
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    e.currentTarget.style.setProperty('--gx', x.toFixed(3));
+    e.currentTarget.style.setProperty('--gy', y.toFixed(3));
+  };
+
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -40,7 +48,9 @@ function Hero() {
         </div>
 
         <div className="main-image">
-          <img src={images[index].src} alt="center" />
+          <div className="glide-wrap" onMouseMove={onGlide}>
+            <img src={images[index].src} alt={images[index].tag} className="glide-img"/>
+          </div>
           <span>{images[index].tag}</span>
         </div>
 

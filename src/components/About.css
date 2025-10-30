@@ -73,3 +73,67 @@
   font-weight: bold;
   color: #222;
 }
+/* --- Responsive Additions for About Section --- */
+
+/* Large tablets / small laptops */
+@media (max-width: 1200px) {
+  .about-container { max-width: 900px; }
+  .about-container h2 { font-size: 2.2rem; }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .about-container { padding: 0 16px; }
+  .about-container h2 { font-size: 2rem; }
+  .about-container p { font-size: 1rem; }
+
+  .team-grid { gap: 24px; }
+
+  .founder-message {
+    padding: 24px 18px;
+    margin-top: 40px;
+  }
+  .founder-message h3 { font-size: 1.6rem; }
+  .founder-message p { font-size: 1rem; }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .about-section { padding: 24px 12px; }
+  .about-container h2 { font-size: 1.8rem; }
+  .about-container p { font-size: 0.95rem; }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .team-card { padding: 16px; }
+  .founder-message h3 { font-size: 1.4rem; }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .about-container h2 { font-size: 1.6rem; }
+  .about-container p { font-size: 0.9rem; line-height: 1.5; }
+
+  .team-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 16px;
+  }
+
+  .team-card { padding: 14px; }
+  .founder-message {
+    padding: 18px 14px;
+    margin-top: 30px;
+  }
+  .founder-message h3 { font-size: 1.25rem; }
+  .founder-message p { font-size: 0.9rem; }
+}
+
+/* Tiny phones */
+@media (max-width: 360px) {
+  .about-container h2 { font-size: 1.4rem; }
+  .about-container p,
+  .founder-message p { font-size: 0.85rem; }
+}

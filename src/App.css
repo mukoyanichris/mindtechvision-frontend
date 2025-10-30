@@ -1,0 +1,15 @@
+/* App.css: ensures footer sits at bottom on short pages */
+html, body, #root { height: 100%; }
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1; /* pushes footer down */
+  display: block;
+}
+
+/* optional: avoid navbar overlap if it is sticky */
